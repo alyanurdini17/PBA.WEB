@@ -1,0 +1,42 @@
+/* --- Trainer Card Styling (trainers.html) --- */
+.trainer-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 10px; /* Rounded corners for a softer look */
+    overflow: hidden; /* Ensures image and content stay within bounds */
+    border: none; /* Remove default Bootstrap border if not needed */
+}
+
+.trainer-card:hover {
+    transform: translateY(-5px); /* Lifts the card slightly on hover */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15) !important; /* Deeper shadow on hover */
+}
+
+/* Styling for the Trainer Profile Image */
+.trainer-card .card-img-top {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 5px solid #ffc107; /* **Vibrant Gold/Warning Accent Border** */
+    margin-bottom: 15px;
+}
+
+/* Ensure trainer names stand out */
+.trainer-card .card-title {
+    font-weight: bold;
+    color: #007bff; /* Primary Blue color for names */
+}
+
+/* Styling for the skill badges */
+.trainer-card .badge {
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-top: 5px;
+    padding: 6px 10px;
+    border-radius: 20px; /* Pill-shaped badges */
+}
+
+/* NEW: Added a dedicated style for the subtitle (Specialization) */
+.trainer-card .card-subtitle {
+    font-style: italic;
+    font-size: 0.95rem;
+    color: #6c757d
