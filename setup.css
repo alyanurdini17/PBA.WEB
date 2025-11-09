@@ -1,0 +1,101 @@
+/* Custom Styles for FitStudio - Updated */
+
+/* General Body and Font Settings */
+body {
+    font-family: 'Poppins', 'Helvetica Neue', Arial, sans-serif; /* Adding Poppins for a modern look (assume linked via Google Fonts or standard fallback) */
+    color: #333;
+    background-color: #f8f9fa; 
+}
+
+/* --- Navigation Bar Updates --- */
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #007bff !important; /* Primary color hover */
+}
+
+.btn-primary {
+    background-color: #007bff; /* Standard Blue */
+    border-color: #007bff;
+}
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+
+/* --- Hero Section Styling (index.html) --- */
+.hero-section {
+    /* Use a high-quality, abstract fitness image or gradient */
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://via.placeholder.com/1920x800/293a73/ffffff?text=ELEGANT+FITNESS+STUDIO');
+    background-size: cover;
+    background-position: center;
+    height: 90vh; /* Nearly full screen height */
+    min-height: 600px;
+}
+
+.hero-section h1 {
+    font-size: 5rem; /* Large, impressive heading */
+    letter-spacing: 5px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9);
+}
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 3rem;
+    }
+}
+
+/* Button Animation for the Call to Action */
+.pulse-btn {
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(255, 193, 7, 0.7); }
+    70% { transform: scale(1.05); box-shadow: 0 0 0 20px rgba(255, 193, 7, 0); }
+    100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(255, 193, 7, 0); }
+}
+
+/* --- Feature Card Styling --- */
+.feature-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 10px; /* Rounded corners */
+}
+
+.feature-card:hover {
+    transform: translateY(-5px); /* Lift on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* --- Remaining styles from previous response (keep these) --- */
+/* Trainer Card Styling (trainers.html) */
+.trainer-card .card-img-top {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 5px solid #ffc107;
+}
+
+/* Map Container Styling (register.html & contact.html) */
+.map-container {
+    overflow: hidden;
+    padding-bottom: 56.25%; 
+    position: relative;
+    height: 0;
+}
+
+.map-container iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+/* Accessibility: Focus styles */
+:focus {
+    outline: 3px solid #007bff;
+    outline-offset: 2px;
+}
+/* Table Styling for Schedule */
+.table {
+    --bs-table-striped-bg: #e9ecef;
+}
